@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* STREAMING_CHUNK:Configuring Tailwind v4 to use class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+--background: #ffffff;
+--foreground: #171717;
+}
+
+/* STREAMING_CHUNK:Setting up Tailwind v4 inline theme variables */
+@theme inline {
+--color-background: var(--background);
+--color-foreground: var(--foreground);
+--font-sans: var(--font-geist-sans);
+--font-mono: var(--font-geist-mono);
+}
+
+/* STREAMING_CHUNK:Binding the Next.js background to the .dark class instead of OS media query */
+.dark {
+--background: #0a0a0a;
+--foreground: #ededed;
+}
+
+body {
+background: var(--background);
+color: var(--foreground);
+font-family: Arial, Helvetica, sans-serif;
+}

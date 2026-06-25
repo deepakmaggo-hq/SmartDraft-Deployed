@@ -1,0 +1,32 @@
+--- FRONTEND (Next.js & Node) ---
+
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+Frontend Secrets
+
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+--- BACKEND (Python & FastAPI) ---
+
+Backend/pycache/
+Backend/.venv/
+Backend/venv/
+Backend/env/
+Backend/*.pyc
+Backend/data/
+
+Backend Secrets
+
+Backend/.env
+
+--- OS GENERATED FILES ---
+
+.DS_Store
+Thumbs.db
