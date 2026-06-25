@@ -17,7 +17,7 @@ Copy the rest of your backend code into the container
 
 COPY . .
 
-Expose the port FastAPI runs on
+# Expose the port FastAPI runs on
 
 EXPOSE 8000
 
