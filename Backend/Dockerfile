@@ -5,7 +5,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-Copy only the requirements first (to leverage Docker caching)
+# Copy only the requirements first (to leverage Docker caching)
 
 COPY requirements.txt .
 
@@ -13,7 +13,7 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-Copy the rest of your backend code into the container
+# Copy the rest of your backend code into the container
 
 COPY . .
 
