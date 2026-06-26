@@ -52,10 +52,10 @@ export default function Home() {
   const [customFilename, setCustomFilename] = useState("");
 
   const getApiUrl = () => {
-    if (typeof window !== "undefined") {
-      return `http://${window.location.hostname}:8000`;
-    }
-    return "http://localhost:8000";
+    // if (typeof window !== "undefined") {
+    //   return `http://${window.location.hostname}:8000`;
+    // }
+    return "https://smartdraft-deployed.onrender.com";
   };
 
   useEffect(() => {
