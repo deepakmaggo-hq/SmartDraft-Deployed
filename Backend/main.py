@@ -28,7 +28,7 @@ app = FastAPI(title="Email Agent API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://172.22.0.1:3000"], 
+    allow_origins=["http://localhost:3000", "http://172.22.0.1:3000","http://192.168.20.184:3000"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
