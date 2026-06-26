@@ -2,6 +2,7 @@ fastapi
 uvicorn
 pydantic
 qdrant-client
+fastembed
 supabase
 langchain-google-genai
 langchain-groq
