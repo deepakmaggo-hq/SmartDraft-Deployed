@@ -152,7 +152,9 @@ async def generate_email(request: EmailGenerateRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 # --- 3. DATABASE MANAGEMENT & AI EVALUATION ---
-
+@app.get("/collections")
+async def collections():
+    return client.get_collections()
 @app.get("/templates")
 async def get_all_templates():
     try:
