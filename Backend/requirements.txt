@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+qdrant-client
+supabase
+langchain-google-genai
+langchain-groq
+python-dotenv
+langgraph
