@@ -155,6 +155,11 @@ async def generate_email(request: EmailGenerateRequest):
 @app.get("/collections")
 async def collections():
     return client.get_collections()
+@app.get("/rebuild")
+async def rebuild():
+    result = build_hybrid_database()
+    return {"result": result}
+    
 @app.get("/templates")
 async def get_all_templates():
     try:
